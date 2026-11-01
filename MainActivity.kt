@@ -7,6 +7,7 @@ import android.graphics.pdf.PdfRenderer
 import android.net.Uri
 import android.os.Bundle
 import android.os.ParcelFileDescriptor
+import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.documentfile.provider.DocumentFile
