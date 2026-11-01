@@ -25,7 +25,11 @@ jobs:
       - name: Extract project
         run: |
           unzip MangaOrganizer_Source.zip -d project
-
+          
+      - name: Apply latest MainActivity
+        run: |
+         cp MainActivity.kt project/MangaOrganizer/app/src/main/java/jp/example/mangaorganizer/MainActivity.kt
+         
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "8.9"
