@@ -46,7 +46,7 @@ jobs:
 
       - name: Show Gradle configuration
         run: |
-          echo "## app/build.gradle.kts" >> "$GITHUB_STEP_SUMMARY"
-          cat project/MangaOrganizer/app/build.gradle.kts >> "$GITHUB_STEP_SUMMARY"
           echo "## AndroidManifest.xml" >> "$GITHUB_STEP_SUMMARY"
+          echo '```xml' >> "$GITHUB_STEP_SUMMARY"
           cat project/MangaOrganizer/app/src/main/AndroidManifest.xml >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
