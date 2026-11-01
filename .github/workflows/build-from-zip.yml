@@ -30,7 +30,7 @@ jobs:
 
       - name: Build APK
         run: |
-          cd project
+          cd project/MangaOrganizer
           gradle --no-daemon :app:assembleDebug
 
       - uses: actions/upload-artifact@v4
